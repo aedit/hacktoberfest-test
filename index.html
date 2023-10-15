@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Ready for hacktoberfest 2023</title>
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --primary-text-color: #efedef;
+        --secondary-text-color: #c3bcc3;
+        --primary-color: #d2b863;
+        --secondary-color: #33b6d8;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        background-color: #0f0913;
+        width: 100%;
+        height: 100%;
+        color: var(--primary-text-color);
+        font-family: "Open Sans", sans-serif;
+        padding: 1rem 2rem;
+      }
+
+      ::selection {
+        background: #b4ff39;
+        color: #170f1e;
+      }
+
+      header,
+      footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .audience-search {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+      }
+
+      .audience-search input {
+        all: unset;
+        border: 1px solid var(--secondary-color);
+        border-radius: 5px;
+        height: 30px;
+        width: 300px;
+        padding: 5px;
+      }
+
+      a {
+        all: unset;
+        cursor: pointer;
+      }
+
+      .audience-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        width: 100%;
+        padding-bottom: 1rem;
+      }
+
+      @media screen and (max-width: 1000px) {
+        .audience-container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      @media screen and (max-width: 756px) {
+        .audience-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media screen and (max-width: 550px) {
+        .audience-container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+
+      .audience-card {
+        padding: 1rem;
+        border: 1px solid var(--primary-color);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .audience-card:hover {
+        box-shadow: 2px 2px 5px var(--primary-color);
+      }
+
+      .audience-image img {
+        width: 100%;
+      }
+
+      .audience-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .audience-name {
+        margin: 0 0.5rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+
+      .audience-about {
+        font-size: 0.8rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .audience-links {
+        align-self: flex-start;
+      }
+
+      .audience-links img {
+        height: 2rem;
+        width: 2rem;
+      }
+
+      footer {
+        padding-bottom: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <a
+        href="https://hacktoberfest.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="images/hacktoberfest.svg" alt="hacktoberfest" srcset="" />
+      </a>
+    </header>
+    <div class="audience-search">
+      <input id="search" type="text" placeholder="🔎 Search Here" />
+    </div>
+
+    <main class="audience-container" id="audience-container">
+      <div class="audience-card">
+        <div class="audience-image">
+          <img src="https://www.aedit.me/_nuxt/img/me.cb38889.jpg" alt="" />
+        </div>
+        <div class="audience-info">
+          <span class="audience-name">Udit Sen</span>
+          <span class="audience-about">
+            SDE 2 UI @ Shipbob, Community Organizer at GDG Cloud Indore SDE 2 UI
+            @ Shipbob, Community Organizer at GDG Cloud Indore SDE 2 UI @
+            Shipbob, Community Organizer at GDG Cloud Indore
+          </span>
+          <div class="audience-links">
+            <a
+              href="https://www.aedit.me/_nuxt/img/me.cb38889.jpg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="iconmonstr-linkedin-3.svg" alt="" srcset="" />
+            </a>
+
+            <img src="iconmonstr-globe-7.svg" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      Made with ♥️ by
+      <a
+        style="margin-left: 0.3rem; color: var(--secondary-color)"
+        href="https://aedit.me"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Udit Sen</a
+      >
+    </footer>
+  </body>
+</html>
