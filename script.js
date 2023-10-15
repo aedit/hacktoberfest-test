@@ -1,7 +1,12 @@
+// ADD YOUR FILE NAME HERE
+
+var files = ["udit_sen", "script2", "3", "5", "4"];
+
+// DO NOT MODIFY ANYTHING BELOW
+
 function loadScripts() {
   var directory = "scripts/";
   var extension = ".js";
-  var files = ["udit_sen", "script2", "3", "5", "4"];
   for (var file of files) {
     var path = directory + file + extension;
     var script = document.createElement("script");
@@ -51,13 +56,12 @@ function generateTemplate(info) {
   return audienceCardTemplate;
 }
 
-const container = document.getElementById("audience-container");
-
 const helloWorld = (a) => {
   audience.push({ ...a, uuid: Math.random().toString(16).slice(2) });
   generateDivs();
 };
 
+const container = document.getElementById("audience-container");
 const generateDivs = (txt) => {
   container.innerHTML = "";
 
